@@ -67,3 +67,206 @@
     width: 60px;
     height: 20px;
 }
+
+.ex-1-square:hover {
+    background-color: red;
+}
+
+.ex-1-square {
+    transition: 2s;
+}
+
+.ex-2-square:active {
+    width: 100%;
+}
+
+.ex-2-square {
+    transition: 1s;
+}
+
+.ex-3-square:hover {
+    border-radius: 50%;
+}
+
+.ex-3-square {
+    transition: 2s;
+}
+
+.ex-4-square:hover {
+    opacity: 0;
+}
+
+.ex-4-square {
+    transition: 2s;
+}
+
+.ex-5-square:hover {
+    transform: scale(2);
+}
+
+.ex-5-square:active {
+    transform: scale(0.5);
+}
+
+.ex-5-square {
+    transition: 2s;
+}
+
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+
+.ex-6-img {
+    transition: 2s;
+}
+
+.ex-7-img:hover {
+    filter: grayscale(0.5) sepia(0.5);
+}
+
+.ex-7-img {
+    transition: 2s;
+}
+
+.ex-8-img:hover {
+    filter: grayscale(0.5) sepia(0.5);
+    border-radius: 30px;
+}
+
+.ex-8-img {
+    transition: 2s;
+}
+
+.ex-9-img:hover {
+    filter: grayscale(0.5) sepia(0.5);
+    border-radius: 30px;
+    transform: scale(1.5);
+}
+
+.ex-9-img {
+    transition: 2s;
+}
+
+.ex-10-icon {
+    animation: ClockwiseSpin 1s linear infinite reverse;
+}
+
+@keyframes ClockwiseSpin {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+
+.ex-11-icon:hover {
+    animation: AlmostFullSpin 1s linear;
+}
+
+@keyframes AlmostFullSpin {
+    0% {
+        transform: rotate(0);
+    }
+
+    90% {
+        transform: rotate(324deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: MoveTopWhiteBox 1s linear;
+}
+
+@keyframes MoveTopWhiteBox {
+    0% {
+        left: 10%;
+    }
+
+    50% {
+        left: 70%;
+    }
+
+    100% {
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: MoveBottomWhiteBox 1s linear;
+}
+
+@keyframes MoveBottomWhiteBox {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: 70%;
+    }
+    100% {
+        right: 20%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: MoveTopWhiteBoxFull 2s linear;
+}
+
+@keyframes MoveTopWhiteBoxFull {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    30% {
+        left: 70%;
+        top: -10px;
+    }
+    50% {
+        left: 80%;
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: MoveBottomWhiteBoxFull 2s linear;
+}
+
+@keyframes MoveBottomWhiteBoxFull {
+    0% {
+        right: 10%;
+        bottom: -10px;
+    }
+    30% {
+        right: 70%;
+        bottom: -10px;
+    }
+    50% {
+        right: 80%;
+        bottom: 100%;
+    }
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        right: 10%;
+        bottom: -10px;
+    }
+}
